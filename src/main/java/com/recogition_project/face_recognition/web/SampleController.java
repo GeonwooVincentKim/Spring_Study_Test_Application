@@ -19,9 +19,9 @@ public class SampleController {
     }
 
     @GetMapping("/main")
-    public String hello(){
-    // public String hello(@RequestParam(name="name", required=false) String name, Model model) {
-        // model.addAttribute("name", name);
+    // public String hello(){
+    public String hello(@RequestParam(name="name", required=false) String name, Model model) {
+        model.addAttribute("name", name);
         return "main.html";
         // return "/src/main/resources/config/templates/main.html";
         // return "../main.html";
