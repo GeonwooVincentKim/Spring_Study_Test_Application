@@ -17,16 +17,16 @@ import org.springframework.web.servlet.ModelAndView;
 // @RestController
 // @CrossOrigin
 public class SampleController {
-    @RequestMapping("/")
-    public String index(){
+    @GetMapping("/")
+    public String main(){
     // public ModelAndView index() {
-        return "index";
+        return "index.html";
         // ModelAndView mav = new ModelAndView("index");
         // return mav;
     }
 
     @GetMapping("/main")
-    public String main(){
+    public String hello(){
     // public String hello(@RequestParam(name="name", required=false) String name, Model model){
     // public ModelAndView main(){
     // public ModelAndView hello(@RequestParam(name="name", required=false) String name) {
