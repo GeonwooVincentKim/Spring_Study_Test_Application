@@ -13,6 +13,9 @@ repositories {
 }
 
 dependencies {
+	// compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-mustache'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.session:spring-session-core'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
